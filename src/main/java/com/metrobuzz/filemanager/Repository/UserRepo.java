@@ -1,7 +1,9 @@
+// Repository
 package com.metrobuzz.filemanager.Repository;
 
-import com.metrobuzz.filemanager.Models.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.metrobuzz.filemanager.Model.UserModel;
 
 public interface UserRepo extends JpaRepository<UserModel, Long> {
     UserModel findByPublicId(String publicId);
